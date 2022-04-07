@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import { Perfume } from '../modelo/perfume'
 import * as SQLite from 'expo-sqlite';
 import arquivoEstilo from '../../arquivoEstilo';
+import DatabaseInit from '../bancodedados/inicializacao'
 
 
 
@@ -13,6 +14,7 @@ export class CrudScreen extends React.Component {
 
     constructor(props) {
         super(props);
+        new DatabaseInit();
         this.findAllPerfume()
     }
 

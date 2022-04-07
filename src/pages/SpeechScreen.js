@@ -5,7 +5,7 @@ import { Button } from "../componentes/Button";
 
 export function SpeechScreen() {
   const speak = () => {
-    const thingToSay = 'Oi guris';
+    const thingToSay = 'Oi Prof';
     Speech.speak(thingToSay);
   };
 
